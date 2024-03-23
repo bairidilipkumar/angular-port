@@ -1,0 +1,31 @@
+.navbar{
+    background-color:rgba(234,243,255,255)
+}
+.nav-item{
+    font-size: 18px;
+}
+.navbar-nav{
+    margin-right: 90px;
+
+}
+.nav-item .nav-link{
+    margin-top:20px;
+    color:black;
+}
+.nav-link:hover{
+    color:#7d2827;
+    text-decoration: underline 2px;
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 5px;
+}
+.name{
+    
+    margin-bottom: 0.99rem;
+}
+.caption{
+   /* margin-left:8rem; */
+    color: #473737;
+    margin-top: -1rem;
+}
