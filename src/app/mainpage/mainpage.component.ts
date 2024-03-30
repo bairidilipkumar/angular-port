@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-mainpage',
   standalone: true,
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './mainpage.component.css'
 })
 export class MainpageComponent {
+
+
+  
+  
+
 
 }

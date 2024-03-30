@@ -1,5 +1,5 @@
 .navbar{
-    background-color:rgba(234,243,255,255)
+    background-color:rgba(26,26,26,1)
 }
 .nav-item{
     font-size: 18px;
@@ -10,7 +10,7 @@
 }
 .nav-item .nav-link{
     margin-top:20px;
-    color:black;
+    color: rgba(245,245,245,1);
 }
 .nav-link:hover{
     color:#7d2827;
@@ -22,10 +22,41 @@
 }
 .name{
     
-    margin-bottom: 0.99rem;
+    margin-bottom: 0.80rem;
+    color: rgba(245,245,245,1);
 }
 .caption{
    /* margin-left:8rem; */
     color: #473737;
     margin-top: -1rem;
 }
+.caption {
+    animation-name: text-fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes text-fade-in {
+    from { opacity: 0;
+    font-size: 10px; }
+    to { opacity: 1;
+    font-size: 16px;}
+  }
+.nav-item{
+
+    animation-name: text-fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    
+  }
+  @keyframes text-fade-in {
+    from { opacity: 0;
+    font-size: 10px; }
+    to { opacity: 1;
+    font-size: 16px;}
+  }
+  .navbar-toggler-icon
+  {
+    background-color: rgba(245, 245,245,1);
+    border-radius: 3px;
+  }
