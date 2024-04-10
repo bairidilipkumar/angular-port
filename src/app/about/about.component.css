@@ -5,3 +5,42 @@
     transition: 0.3s ease-in-out;
     transform: scale(1.01);
 }
+.card{
+    border-radius: 1rem;
+}
+.diamond-text {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+.diamond-text::before,
+.diamond-text::after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent; /* Adjust border width as needed */
+}
+
+.diamond-text::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: #ccc; /* Adjust color as needed */
+}
+
+.diamond-text::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: #ccc; /* Adjust color as needed */
+}
+
+.diamond-text span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#mainimg{
+    border-radius: 3rem;
+}

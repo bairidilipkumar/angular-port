@@ -1,4 +1,9 @@
-
+body{
+    background-color: rgba(26,26,26,1)
+}
+.container{
+    background-color: rgba(26,26,26,1)
+}
 
 .home-content{
     animation: slideBottom 1s ease forwards;
@@ -35,6 +40,17 @@
 #pro1-1{
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
+}
+#mainimg{
+    border-radius: 5rem;
+}
+#mainimg{
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+}
+#pro1{
+    background-color: rgb(157, 164, 235);
 }
 
   
