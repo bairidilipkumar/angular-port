@@ -38,13 +38,7 @@
     to { opacity: 1;
     font-size: 16px;}
   }
-.nav-item{
 
-    animation-name: text-fade-in;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    
-  }
   @keyframes text-fade-in {
     from { opacity: 0;
     font-size: 10px; }
