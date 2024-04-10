@@ -41,14 +41,7 @@ body{
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
-#mainimg{
-    border-radius: 5rem;
-}
-#mainimg{
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 1s;
 
-}
 #pro1{
     background-color: rgb(157, 164, 235);
 }
