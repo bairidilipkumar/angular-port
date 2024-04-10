@@ -30,11 +30,7 @@
     color: #473737;
     margin-top: -1rem;
 }
-.caption {
-    animation-name: text-fade-in;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-  }
+
   
   @keyframes text-fade-in {
     from { opacity: 0;
