@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import Typed from 'typed.js';
 
 
 @Component({
@@ -10,9 +11,5 @@ import { Component } from '@angular/core';
 })
 export class MainpageComponent {
 
-
-  
-  
-
-
 }
+
