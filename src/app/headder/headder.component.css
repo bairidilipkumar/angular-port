@@ -13,7 +13,7 @@
     color: rgba(245,245,245,1);
 }
 .nav-link:hover{
-    color:#7d2827;
+    color:#f2f1f1;
     text-decoration: underline 2px;
     cursor: pointer;
 }
@@ -31,6 +31,12 @@
     margin-top: -1rem;
 }
 
+
+
+
+  
+
+
   
   @keyframes text-fade-in {
     from { opacity: 0;
@@ -47,6 +53,6 @@
   }
   .navbar-toggler-icon
   {
-    background-color: rgba(245, 245,245,1);
+    background-color: rgb(255, 255, 255);
     border-radius: 3px;
   }
