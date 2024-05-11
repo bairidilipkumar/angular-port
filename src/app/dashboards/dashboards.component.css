@@ -5,3 +5,10 @@
     transition: 0.3s ease-in-out;
     transform: scale(1.01);
 }
+#tableau{
+    color: rgb(210, 148, 152);
+}
+#tableau:hover{
+    color: rgb(169, 60, 60);
+    text-decoration: underline 3px solid rgb(223, 93, 93);
+}

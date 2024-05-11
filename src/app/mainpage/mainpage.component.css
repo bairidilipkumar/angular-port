@@ -45,6 +45,15 @@ p{
     cursor: pointer;
     color: black;
 }
+#dashboard{
+    font-style: normal;
+    color: rgb(127, 94, 133);
+}
+#dashboard:hover{
+    color: rgb(156, 116, 190);
+    cursor: pointer;
+    text-decoration: underline solid rgb(157, 118, 193);
+}
 
   
   @keyframes text-fade-in {
