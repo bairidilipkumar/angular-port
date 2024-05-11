@@ -41,8 +41,9 @@ body{
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
-#pro1{
-    background-color: rgb(157, 164, 235);
+p{
+    cursor: pointer;
+    color: black;
 }
 
   

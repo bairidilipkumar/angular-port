@@ -5,11 +5,13 @@ import { HeadderComponent } from './headder/headder.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { AboutComponent } from './about/about.component';
 import { CorideComponent } from './coride/coride.component';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeadderComponent,FooterComponent,MainpageComponent,AboutComponent,CorideComponent],
+  imports: [RouterOutlet,HeadderComponent,FooterComponent,MainpageComponent,AboutComponent,CorideComponent,DashboardsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
