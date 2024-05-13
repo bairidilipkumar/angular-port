@@ -12,3 +12,65 @@
     color: rgb(169, 60, 60);
     text-decoration: underline 3px solid rgb(223, 93, 93);
 }
+
+#gif{
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content{
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+
+@keyframes text-fade-in {
+    from { opacity: 0;
+    font-size: 10px; }
+    to { opacity: 1;
+    font-size: 16px;}
+  }
+  @keyframes slideRight{
+    0% { 
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0% { 
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0% { 
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0% { 
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
