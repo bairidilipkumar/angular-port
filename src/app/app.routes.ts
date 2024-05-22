@@ -9,5 +9,6 @@ export const routes: Routes = [
     {path:"mainpage",component:MainpageComponent},
     {path:"about",component:AboutComponent},
     {path:"coride,",component:CorideComponent},
-    {path:"dashboard",component:DashboardsComponent}
+    {path:"dashboard",component:DashboardsComponent},
+    {path:"coride",component:CorideComponent}
 ];

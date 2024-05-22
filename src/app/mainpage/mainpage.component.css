@@ -34,7 +34,7 @@ body{
 
 }
 #pro1{
-    animation: slideRight 1s ease forwards;
+    animation: slideTop 1s ease forwards;
     animation-delay: 1s;
 }
 #pro1-1{

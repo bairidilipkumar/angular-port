@@ -11,7 +11,7 @@ import { DashboardsComponent } from './dashboards/dashboards.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeadderComponent,FooterComponent,MainpageComponent,AboutComponent,CorideComponent,DashboardsComponent],
+  imports: [RouterOutlet,HeadderComponent,FooterComponent,MainpageComponent,AboutComponent,CorideComponent,DashboardsComponent,CorideComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
