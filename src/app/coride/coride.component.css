@@ -24,3 +24,7 @@
 #intro{
     background-color:#e2eef0;
 }
+.card{
+    border-radius: 1.2rem;
+    border: 3px solid #c0c2c2;;
+}
