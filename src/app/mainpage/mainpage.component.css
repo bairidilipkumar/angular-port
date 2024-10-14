@@ -47,12 +47,12 @@ p{
 }
 #dashboard{
     font-style: normal;
-    color: rgb(127, 94, 133);
+    color: rgb(63, 62, 64);
 }
 #dashboard:hover{
-    color: rgb(156, 116, 190);
+    color: rgb(83, 82, 84);
     cursor: pointer;
-    text-decoration: underline solid rgb(157, 118, 193);
+    text-decoration: underline solid rgb(207, 181, 181);
 }
 
   

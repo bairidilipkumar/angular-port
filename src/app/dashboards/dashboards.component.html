@@ -129,7 +129,7 @@
                 <h1 style="color:#ca4f4f">Data Projects</h1>
                 <h5 style="color: rgb(0, 0, 0); margin-top: 3rem; font-size: 1.3rem;">AWS ETL pipeline Project</h5>
                 <div class="text-center">
-                    <img src="../assets/images/aws.gif" class="img-fluid mt-5" style="height: 500px; border-radius: 2rem;">
+                    <img src="../assets/images/glue.gif" class="img-fluid mt-5" style="height: 500px; border-radius: 2rem;">
                 </div>
                 <p>In this project, I built a data pipeline using AWS services. First, data is stored in Amazon S3, which acts as a staging area. Next, I used AWS Glue to clean and transform the data through an ETL (Extract, Transform, Load) process. After the data is prepared, an AWS Glue crawler automatically scans it and sends it to Amazon Athena, where it can be queried easily. Finally, the processed data is visualized in Amazon QuickSight, allowing the client to gain insights and make informed decisions.</p>
            <p>Scalability and Operational Efficiency:
@@ -167,6 +167,29 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row mt-2 mb-5">
+        <div class="col-md-12 col-s-12">
+            <div class="home-content1" data-aos="fade-left" data-aos-delay="200">
+                <h3 style="color: rgb(0, 0, 0); margin-top: 3rem; font-size: 2rem;">Airflow orchestration using API.</h3>
+                <div class="text-center">
+                    <img src="../assets/images/airflow.gif" class="img-fluid mt-5" style="height: 500px; border-radius: 2rem;">
+                </div>
+                <p>Airflow is used to orchestrat the tasks by creating DAG's so i did this project to know more about airflow workflow.
+                    
+                    <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
+
+                    <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.
+
+                    <br><b>Data Processing:</b> Implemented transformations on the extracted data, cleaning and organizing it to meet storage and analysis requirements.
+
+                    <br><b>Data Storage:</b> Developed a task to store the processed data in Amazon S3, ensuring it was securely saved and easily accessible for future use.</p>
+            </div>
+            <!-- <a href="https://github.com/bairidilipkumar/aws/tree/main/project_spark_databricks_ipl" target="_blank">GitLink</a> -->
+        </div>
+    </div>
+</div>
+
 
   <div id="pro111">
     <div class="container-fluid"style="width: 100%; height: 100%; ">
@@ -178,59 +201,149 @@
   
 
 
+  
 
-<div class="container" >
-    <div class="row mt-2 mb-5">
-        <div class="col-md-12 col-s-12">
-            <div class="home-content1" data-aos="fade-left" data-aos-delay="200">
-                <h3 style="color: rgb(0, 0, 0); margin-top: 3rem; font-size:2rem;">Car Sales Dashboard </h3>
-                <img [src]="'../assets/images/car_dashboard.PNG'" class="img-fluid" style="max-height: 650px; max-width: 100%; border-radius: 1rem;" id="pro2">
-                <h6 style="color: rgb(0,0,0);" class="mt-3">About Dashboard and tools used?</h6>
-                <p>To create the above dashboard, I utilized Tableau Public, which offers an extremely user-friendly interface. This dashboard primarily focuses on analyzing yearly car sales and comparing them to the previous year to identify improvements in sales. Initially, I developed key performance indicators (KPIs) such as year-to-date total sales, year-to-date car sales, and year-to-date average sales.
+  <div class="row justify-content-around mt-3 mb-5">
+    <div class="card mt-5" style="max-width: 40rem; max-height: 50rem;">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <p>HR Dashboard </p>
+          <hr>
+          <br>
+          <img src="../assets/images/hr_dashboard.PNG" class="img-fluid" style="height: 300px; width: 600px;"
+               data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this)">
+          <b>Explanation </b><p>(Click on the image "↗" )</p>
+          <p>I created this dashboard using Power BI for a store owner to help analyze business performance. It starts with key details like total profits, total quantities sold, and overall sales. Next, the dashboard breaks down profits by different product subcategories and shows which months had the highest profits and losses.
 
-                    Following that, I proceeded to create trends in sales on a week-to-week basis using Line graph. This was accompanied by a pie chart illustrating the sales data based on the body styles of cars that were sold the most. Additionally, a donut chart was used to display which colors of cars were sold more frequently.
-                    <br>
-                   <br> Moving on to the next section, the dashboard presents year-to-date dealer data, showcasing the business conducted by dealers categorized by region. Finally, there is a table displaying the types of company cars sold annually and the total business conducted categorized by the company whose cars were sold.
-                    <br>
-                   <br> On the left side of the dashboard, there are filters available. These filters allow users to customize the data displayed based on their preferences.
-                </p>
-                <a href="https://public.tableau.com/app/profile/dilip.kumar.bairi/vizzes" target="__blank" class="nav-link"><p id="tableau">Tableau Public account-></p></a>
-            </div>
+            A donut chart highlights the total quantities sold by category, splitting sales into furniture, electronics, and clothing. There’s also a bar graph showing the states where the business did best, and a final donut chart displays the different payment methods used by customers.</p>
         </div>
+      </div>
     </div>
-    <div class="row mt-2 mb-5">
-        <div class="col-md-12 col-s-12">
-            <div class="home-content">
-                <h3 style="color: rgb(0, 0, 0); margin-top: 3rem; font-size:2rem;">HR Dashboard </h3>
-                <img [src]="'../assets/images/hr_dashboard.PNG'" class="img-fluid" style="max-height: 650px; max-width: 100%; border-radius: 1rem;" id="pro2">
-                <h6 style="color: rgb(0,0,0);" class="mt-3">About Dashboard and tools used?</h6>
-                <p>To create the above dashboard, I utilized Tableau Public. This HR dashboard focuses on monitoring employee dynamics within the company, including new hires, departures, reasons for leaving, job satisfaction levels, and employee backgrounds.
+  
+    <div class="card mt-5" style="max-width: 40rem; max-height: 50rem;">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <p>Store Sales Dashboard</p>
+          <hr>
+          <br>
+          <img src="../assets/images/dashboard_ma.PNG" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+               data-bs-toggle="modal" data-bs-target="#imageModal1" onclick="showImage(this)">
+          <b>Explanation</b>
+          <p>To create the dashboard, I utilized Tableau Public. This HR dashboard focuses on monitoring employee dynamics within the company, including new hires, departures, reasons for leaving, job satisfaction levels, and employee backgrounds.
 
-                    <br>Starting with key performance indicators (KPIs), the dashboard displays the total number of employees in the company, the active rate, attrition count, and attrition percentage. Additionally, it includes a gender-based filter to analyze the demographics of employees leaving the company.
-                    <br>
-                   <br> The first visual element is a pie chart illustrating department-wise attrition rates. This is followed by bar graphs depicting the distribution of employees across different age groups. A table presents data on job satisfaction levels based on employee ratings.
-                    <br>
-                    <br>The next section begins with a bar chart showcasing attrition rates in various education fields, followed by a donut chart highlighting attrition rates by gender across different age groups.
-                </p>
-            </div>
+            Starting with key performance indicators (KPIs), the dashboard displays the total number of employees in the company, the active rate, attrition count, and attrition percentage. Additionally, it includes a gender-based filter to analyze the demographics of employees leaving the company.
+            
+            The first visual element is a pie chart illustrating department-wise attrition rates, followed by bar graphs depicting the distribution of employees across different age groups. A table presents data on job satisfaction levels based on employee ratings.</p>
         </div>
-    </div>
-
-    <div class="row mt-2 mb-5">
-        <div class="col-md-12 col-s-12">
-            <div class="home-content">
-                <h3 style="color: rgb(0, 0, 0); margin-top: 3rem; font-size:2rem;">Store Sales Dashboard </h3>
-                <img [src]="'../assets/images/dashboard_ma.PNG'" class="img-fluid" style="max-height: 650px; max-width: 100%; border-radius: 1rem;" id="pro2">
-                <h6 style="color: rgb(0,0,0);" class="mt-3">About Dashboard and tools used?</h6>
-                <p>To create the above dashboard, I utilized Power BI. The dashboard was designed for an individual store owner aiming to analyze their business performance. It begins with key performance indicators (KPIs) such as total profits, the sum of quantities sold, and the sum of total amounts.
-                     <br>
-                    <br>Next, the dashboard displays a breakdown of profits by subcategory items within the store, followed by insights into which months of the year saw higher profits and losses.
-                    <br>
-                   <br> A donut chart visualizes the sum of quantities sold by category, categorizing sales data into furniture, electronics, and clothing. Following that, a bar graph identifies states where the business performed well, and a final donut chart showcases the distribution of payments modes used by customers.
-                </p>
-            </div>
-        </div>
+      </div>
     </div>
   </div>
 
+
+
+  <div class="row justify-content-around mt-3 mb-5">
+    <div class="card mt-5" style="max-width: 40rem; max-height: 50rem;">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <p>Car Sales Dashboard</p>
+          <hr>
+          <br>
+          <img src="../assets/images/car_dashboard.PNG" class="img-fluid" style="height: 300px; width: 600px;"
+               data-bs-toggle="modal" data-bs-target="#imageModal2" onclick="showImage(this)">
+          <b>Explanation</b>
+          <p>I created this dashboard using Tableau Public, a tool with an easy-to-use interface. This dashboard mainly looks at yearly car sales and compares them to the previous year to spot any growth in sales. First, I set up key performance indicators (KPIs) that show the total sales so far this year, the total number of cars sold, and the average sales.
+
+            Next, I added a weekly sales trend line to show how sales change week by week. A pie chart highlights the most popular car body styles sold, and a donut chart shows which car colors sold the most.
+            
+            In the next section, the dashboard shows year-to-date dealer performance, broken down by region. Lastly, a table lists the types of company cars sold each year and the total sales grouped by the car company.
+            
+            On the left side of the dashboard, users can find filters to adjust the data display to their preferences</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card mt-5" style="max-width: 40rem; max-height: 50rem;">
+      <div class="card-body">
+        <div class="row justify-content-center">
+          <p>Call Center Dashboard</p>
+          <hr>
+          <br>
+          <img src="../assets/images/dashboard4.PNG" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+               data-bs-toggle="modal" data-bs-target="#imageModal3" onclick="showImage(this)">
+          <b>Explanation</b>
+          <p>The dashboard built in Power BI provides insights into call center performance, showcasing key metrics such as total calls, total call duration, average call duration, and response time. It displays key performance indicators (KPIs) that highlight the total calls received, total call duration, average call duration, and response time. A bar graph illustrates the number of calls received each day of the week, with Friday being the busiest day. Additionally, a map highlights the areas from which calls are coming, while a donut chart breaks down how customers are responded to—whether through chatbot, email, or web. The dashboard also includes sentiment analysis to provide insights into customer sentiment and features a date partition filter on the left side for easy navigation and data selection
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="https://public.tableau.com/app/profile/dilip.kumar.bairi/vizzes" target="__blank" class="nav-link"><p id="tableau">Tableau Public account-></p></a>
+
+
+
+
+
+  
+  <!-- Modal for Image Popup -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Hr Dashboard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="../assets/images/hr_dashboard.PNG" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Sales Dashboard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="../assets/images/dashboard_ma.PNG" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Car Sales Dashboard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="../assets/images/car_dashboard.PNG" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Call Center Dashboard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImage" src="../assets/images/dashboard4.PNG" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function showImage(element) {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = element.src;
+    }
+  </script>
   
