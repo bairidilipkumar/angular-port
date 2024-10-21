@@ -206,7 +206,7 @@
         <b class="card-text">Explanation </b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation)</p>
         <p>In this project, I built a data pipeline using AWS services. First, data is stored in Amazon S3, which acts as a staging area. Next, I used AWS Glue to clean and transform the data through an ETL (Extract, Transform, Load) process. After the data is prepared, an AWS Glue crawler automatically scans it and sends it to Amazon Athena, where it can be queried easily. Finally, the processed data is visualized in Amazon QuickSight, allowing the client to gain insights and make informed decisions.</p>
            <p>Scalability and Operational Efficiency:
-
+            <br><p>Read More...</p>
       </div>
     </div>
   </div>
@@ -217,7 +217,7 @@
         <p class="card-title">Orchestrating weather API with Airflow to S3</p>
         <hr>
         <br>
-        <img src="../assets/images/airflow-s3.gif" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+        <img src="../assets/images/weather-api-s3-email.svg" class="img-fluid mb-3" style="height: 300px; width: 600px;"
              data-bs-toggle="modal" data-bs-target="#imageModal-airflow-s3" onclick="showImage(this)">
         <b class="card-text">Explanation</b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
         <p>This project extends the functionality of a Weather API by integrating several key components to streamline the process of gathering and distributing weather data.
@@ -227,6 +227,7 @@
        <br> <b> Storing Data in S3:</b> Once the data is fetched, it is stored in Amazon S3 (Simple Storage Service). S3 serves as a reliable storage solution, ensuring that our weather data is easily accessible and secure.
           
      <br> <b>Triggering Processing with S3 Events:</b> To enhance the responsiveness of our system, </p>
+     <br><p>Read More...</p>
       </div>
     </div>
   </div>
@@ -240,7 +241,7 @@
         <p class="card-title">Exploratory Data Analysis (EDA) Using Apache Spark Leveraging Databricks</p>
         <hr>
         <br>
-        <img src="../assets/images/databrickss3.gif" class="img-fluid" style="height: 300px; width: 600px;"
+        <img src="../assets/images/databricks.svg" class="img-fluid" style="height: 300px; width: 600px;"
              data-bs-toggle="modal" data-bs-target="#imageModal-databricks-s3" onclick="showImage(this)">
         <b class="card-text">Explanation </b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
         <p>IPL Data Analysis Workflow
@@ -249,6 +250,7 @@
           <br><b>Data Ingestion</b>: IPL data is received from various sources and stored in Amazon S3 for scalable and durable storage.
           
           <br><b>Data Processing in Databricks:</b></p>
+          <br><p>Read More...</p>
       </div>
     </div>
   </div>
@@ -259,7 +261,7 @@
         <p class="card-title">Orchestrating weather API</p>
         <hr>
         <br>
-        <img src="../assets/images/airflow.gif" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+        <img src="../assets/images/Normal-weather-api-airflow.svg" class="img-fluid mb-3" style="height: 300px; width: 600px;"
              data-bs-toggle="modal" data-bs-target="#imageModal-weather-api" onclick="showImage(this)">
         <b class="card-text">Explanation</b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
         <p>Airflow is used to orchestrat the tasks by creating DAG's so i did this project to know more about airflow workflow.
@@ -267,6 +269,7 @@
           <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
 
           <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.</p>
+          <br><p>Read More...</p>
       </div>
     </div>
   </div>
@@ -388,13 +391,13 @@
 
   <div class="modal fade" id="imageModal-databricks-s3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 80vw; max-height: 100vh;">
-      <div class="modal-content" style="height: 100%;">
+      <div class="modal-content" style="height: auto; max-height: 100%;">
         <div class="modal-header">
           <h5 class="modal-title" id="imageModalLabel-databricks-s3">Exploratory Data Analysis (EDA) Using Apache Spark Leveraging Databricks</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center" style="height: calc(100% - 3.5rem);">
-          <img id="modalImage" src="../assets/images/databrickss3.gif" class="img-fluid" style="height: 60%; width: 60%; object-fit: contain;">
+          <img id="modalImage" src="../assets/images/databricks.svg" class="img-fluid" style="height: 60%; width: 60%; object-fit: contain;">
         
           
         <p>IPL Data Analysis Workflow
@@ -417,79 +420,71 @@
 
   <div class="modal fade" id="imageModal-weather-api" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 80vw; max-height: 100vh;">
-      <div class="modal-content" style="height: 100%;">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imageModalLabel">Orchestrating weather API</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content" style="height: auto; max-height: 100%;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Orchestrating weather API</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center d-flex flex-column align-items-center justify-content-center" style="overflow-y: auto; max-height: calc(100vh - 150px);">
+                <img id="modalImage" src="../assets/images/Normal-weather-api-airflow.svg" class="img-fluid" style="height: 60%; width: 60%; object-fit: contain;">
+                <p class="mt-3">Airflow is used to orchestrate the tasks by creating DAGs, so I did this project to know more about the Airflow workflow.
+                    <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
+                    <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.
+                    <br><b>Data Processing:</b> Implemented transformations on the extracted data, cleaning and organizing it to meet storage and analysis requirements.
+                    <br><b>Data Storage:</b> Developed a task to store the processed data in Amazon S3, ensuring it was securely saved and easily accessible for future use.
+                </p>
+                <a href="https://github.com/bairidilipkumar/aws/tree/main/airflow-projects" target="_blank" class="mt-2">GitLink</a>
+            </div>
         </div>
-        <div class="modal-body text-center" style="height: calc(100% - 3.5rem);">
-          <img id="modalImage" src="../assets/images/airflow.gif" class="img-fluid" style="height: 60%; width: 60%; object-fit: contain;">
-        </div>
-        <p>Airflow is used to orchestrat the tasks by creating DAG's so i did this project to know more about airflow workflow.
-            
-            <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
-
-            <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.
-
-            <br><b>Data Processing:</b> Implemented transformations on the extracted data, cleaning and organizing it to meet storage and analysis requirements.
-
-            <br><b>Data Storage:</b> Developed a task to store the processed data in Amazon S3, ensuring it was securely saved and easily accessible for future use.</p>
-            <a href="https://github.com/bairidilipkumar/aws/tree/main/airflow-projects" target="_blank">GitLink</a>
     </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+
 
 
 
   <div class="modal fade" id="imageModal-airflow-s3" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 80vw; max-height: 100vh;">
-      <div class="modal-content" style="height: 100%;">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imageModal-airflow-s3">Orchestrating weather API with Airflow to S3</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content" style="height: auto; max-height: 100%;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModal-airflow-s3">Orchestrating weather API with Airflow to S3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center" style="overflow-y: auto; max-height: calc(100vh - 150px);">
+                <img id="modalImage" src="../assets/images/weather-api-s3-email.svg" class="img-fluid" style="height: auto; width: 60%; object-fit: contain;">
+                <p><br>
+                    <b>Data Orchestration with Airflow:</b> Initially, we orchestrate the fetching of weather data using Apache Airflow. This allows us to automate the data collection process efficiently.
+                    <br><b>Storing Data in S3:</b> Once the data is fetched, it is stored in Amazon S3 (Simple Storage Service). S3 serves as a reliable storage solution, ensuring that our weather data is easily accessible and secure.
+                    <br><b>Triggering Processing with S3 Events:</b> To enhance the responsiveness of our system, we will implement S3 event notifications. These notifications will be triggered whenever new data is added to S3.
+                    <br><b>Data Processing with AWS Lambda:</b> When new data is uploaded to S3, it will automatically trigger an AWS Lambda function. This serverless function will process the incoming weather data, ensuring it is formatted and ready for distribution.
+                    <br><b>Distributing Weather Forecasts:</b> The processed weather data will then be sent to various destinations, such as news channels and other services, every hour. This timely distribution ensures that the latest weather forecasts are available for broadcasting and public use.
+                </p>
+            </div>
         </div>
-        <div class="modal-body text-center" style="height: calc(100% - 3.5rem);">
-          <img id="modalImage" src="../assets/images/airflow-s3.gif" class="img-fluid" style="height: 60%; width: 60%; object-fit: contain;">
-          <p>This project extends the functionality of a Weather API by integrating several key components to streamline the process of gathering and distributing weather data.<br>
-
-           <b> Data Orchestration with Airflow:</b> Initially, we orchestrate the fetching of weather data using Apache Airflow. This allows us to automate the data collection process efficiently.
-            
-         <br> <b> Storing Data in S3:</b> Once the data is fetched, it is stored in Amazon S3 (Simple Storage Service). S3 serves as a reliable storage solution, ensuring that our weather data is easily accessible and secure.
-            
-         <br>  <b>Triggering Processing with S3 Events:</b> To enhance the responsiveness of our system, we will implement S3 event notifications. These notifications will be triggered whenever new data is added to S3.
-            
-         <br> <b> Data Processing with AWS Lambda:</b> When new data is uploaded to S3, it will automatically trigger an AWS Lambda function. This serverless function will process the incoming weather data, ensuring it is formatted and ready for distribution.
-            
-         <br> <b> Distributing Weather Forecasts:</b> The processed weather data will then be sent to various destinations, such as news channels and other services, every hour. This timely distribution ensures that the latest weather forecasts are available for broadcasting and public use.</p>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
 
   <div class="modal fade" id="imageModal-glue" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" style="max-width: 80vw; max-height: 100vh;">
-      <div class="modal-content" style="height: 100%;">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imageModalLabel">AWS ETL pipeline Project</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content" style="height: auto; max-height: 100%;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">AWS ETL pipeline Project</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center" style="overflow-y: auto; max-height: calc(100vh - 150px);">
+                <img id="modalImage" src="../assets/images/glue.gif" class="img-fluid" style="height: auto; width: 60%; object-fit: contain;">
+                <p></p>
+                <p>Scalability and Operational Efficiency:<br>
+                    <b>On-Demand Scalability:</b> The use of AWS Glue for ETL and crawlers, along with Amazon Athena for querying, allows the pipeline to scale according to the volume of data and query load, accommodating changing requirements without significant manual intervention.
+                    <br><b>Low Operational Overhead:</b> This orchestration minimizes the need for extensive management and maintenance efforts, allowing your team to focus on data insights rather than infrastructure management.
+                    <br><b>Good Latency:</b> Despite the slightly higher costs, the combination of these services ensures efficient processing and querying, delivering insights quickly to support informed decision-making.
+                </p>
+            </div>
         </div>
-        <div class="modal-body text-center" style="height: calc(100% - 3.5rem);">
-          <img id="modalImage" src="../assets/images/glue.gif" class="img-fluid" style="height: 50%; width: 60%; object-fit: contain;">
-          <p>In this project, I built a data pipeline using AWS services. First, data is stored in Amazon S3, which acts as a staging area. Next, I used AWS Glue to clean and transform the data through an ETL (Extract, Transform, Load) process. After the data is prepared, an AWS Glue crawler automatically scans it and sends it to Amazon Athena, where it can be queried easily. Finally, the processed data is visualized in Amazon QuickSight, allowing the client to gain insights and make informed decisions.</p>
-           <p>Scalability and Operational Efficiency:
-
-           <br> <b>On-Demand Scalability:</b> The use of AWS Glue for ETL and crawlers, along with Amazon Athena for querying, allows the pipeline to scale according to the volume of data and query load, accommodating changing requirements without significant manual intervention.
-            
-        <br><b> Low Operational Overhead:</b> This orchestration minimizes the need for extensive management and maintenance efforts, allowing your team to focus on data insights rather than infrastructure management.
-            
-       <br> <b>Good Latency:</b> Despite the slightly higher costs, the combination of these services ensures efficient processing and querying, delivering insights quickly to support informed decision-making.</p>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
 
 
