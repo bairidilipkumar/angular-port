@@ -135,6 +135,23 @@ p{
   }
 
 
+  /* Card styling */
+.shadow-effect {
+    background-color: white; /* Solid white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: none; /* Remove borders */
+    border-radius: 10px; /* Optional for rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Floating effect on hover */
+.shadow-effect:hover {
+    transform: translateY(-10px); /* Move the card slightly upwards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+
+
 
 
 
@@ -143,3 +160,8 @@ p{
 
 
  
+
+
+
+
+  
