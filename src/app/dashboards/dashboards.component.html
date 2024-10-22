@@ -278,6 +278,91 @@
 
 
 
+<div class="row justify-content-around mt-3 mb-5">
+  <div class="card mt-5 shadow-effect" style="max-width: 40rem; max-height: 65rem;">
+    <div class="card-body">
+      <div class="row justify-content-center">
+        <p class="card-title">Amazon Data Engineering Books Scraping and Visualization Pipeline</p>
+        <hr>
+        <br>
+        <img src="../assets/images/amazon-web-scraping.svg" class="img-fluid" style="height: 300px; width: 600px;"
+             data-bs-toggle="modal" data-bs-target="#imageModal-amazon-book" onclick="showImage(this)">
+        <b class="card-text">Explanation </b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
+        <p>Amazon web Scarping
+        <br>  This project automates the process of collecting, transforming, and visualizing data related to data engineering books available on Amazon. 
+        <br>   The data is collected via API and web scraping, transformed into a structured format, and stored in a PostgreSQL database. The stored data 
+        <br>  is then connected to Power BI for real-time visualization, ensuring continuous insights into trending books in the data engineering field.
+        <br><p>Read More...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mt-5 shadow-effect" style="max-width: 40rem; max-height: 65rem;">
+    <div class="card-body">
+      <div class="row justify-content-center">
+        <p class="card-title">Heart Disease Prediction and Exploratory Data Analysis (EDA)</p>
+        <hr>
+        <br>
+        <img src="../assets/images/heart-eda.jfif" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+             data-bs-toggle="modal" data-bs-target="#imageModal-heart" onclick="showImage(this)">
+        <b class="card-text">Explanation</b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
+        <p>his project aims to predict the likelihood of heart disease in patients by analyzing medical data. A detailed exploratory data analysis (EDA)
+           is conducted to uncover patterns and insights within the dataset. Machine learning models are then used to predict heart disease risk based 
+           on key health indicators such as age, cholesterol levels, blood pressure, and more</p>
+          <br><p>Read More...</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- modal of ABOVE 2 -->
+
+<div class="modal fade" id="imageModal-amazon-book" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 90vw; max-height: 90vh;">
+    <div class="modal-content" style="height: auto; max-height: 100vh;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel-databricks-s3">Exploratory Data Analysis (EDA) Using Apache Spark Leveraging Databricks</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center" style="height: calc(100% - 3.5rem); overflow-y: auto;">
+        <img id="modalImage" src="../assets/images/amazon-web-scraping.svg" class="img-fluid" alt="EDA Project Image" style="max-width: 80%; height: auto; object-fit: contain;">
+        
+        <p><b>Data Collection:</b> Web scraping Amazon for the latest data engineering books using Python BeautifulSoup and requests libraries. Collecting key details like book titles, authors, ratings, prices, and availability. API integration (if available) to fetch additional metadata such as publication dates or customer reviews.<br>
+        <b>Data Transformation:</b> Cleaning and structuring the raw data into a suitable format for analysis using pandas. Applying necessary transformations, such as data type conversions, handling missing values, and normalizing book categories.<br>
+        <b>Data Storage (PostgreSQL):</b> Using PostgreSQL as the primary data store to maintain the up-to-date records of scraped data. Writing the transformed data into PostgreSQL using psycopg2 library. Ensuring data integrity and creating automated updates for newly scraped data.<br>
+        <b>Visualization (Power BI):</b> Connecting Power BI to PostgreSQL for real-time access to the latest scraped data. Building interactive dashboards to visualize key metrics like the top-rated books, most popular authors, and price trends.</p>
+        <br>
+        <a href="https://github.com/bairidilipkumar/aws/tree/main/project_spark_databricks_ipl" target="_blank">GitLink</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal-heart" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 90vw; max-height: 90vh;">
+    <div class="modal-content" style="height: auto; max-height: 100vh;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel-databricks-s3">Heart Disease Prediction and Exploratory Data Analysis (EDA)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center" style="height: calc(100% - 3.5rem); overflow-y: auto;">
+        <img id="modalImage" src="../assets/images/heart-eda.jfif" class="img-fluid" alt="Heart EDA Project Image" style="max-width: 80%; height: auto; object-fit: contain;">
+      
+      <p><b>Exploratory Data Analysis (EDA):</b> Performing comprehensive EDA using Python libraries like pandas, matplotlib, and seaborn to understand the datasets structure and relationships. Visualizing the distribution of key features such as age, cholesterol levels, blood pressure, and target variables (presence or absence of heart disease). Identifying correlations between features, handling missing data, and outlier detection. Feature engineering by creating new variables from existing ones (e.g., age groups, cholesterol levels categorized into risk brackets).<br>
+      
+      <b>Data Preprocessing:</b> Scaling and normalizing data using techniques like Min-Max scaling and StandardScaler to prepare it for machine learning models. Splitting the dataset into training and test sets to evaluate model performance.<br>
+      
+      <b>Machine Learning Models:</b> Implementing classification models such as Logistic Regression, Random Forest, and Support Vector Machines (SVM) to predict the presence of heart disease. Hyperparameter tuning using grid search and cross-validation to optimize model performance. Evaluating models using metrics like accuracy, precision, recall, F1-score, and ROC-AUC curves.</p>
+      
+      <br>
+      <a href="https://github.com/bairidilipkumar/MachineLearning_Models/blob/main/EDA%20and%20Pridiction%20of%20Heart%20Disease/Heart_EDA.ipynb" target="_blank">GitLink</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
