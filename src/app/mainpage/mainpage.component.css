@@ -146,10 +146,23 @@ p{
 
 /* Floating effect on hover */
 .shadow-effect:hover {
-    transform: translateY(-10px); /* Move the card slightly upwards */
+    transform: translateY(-5px); /* Move the card slightly upwards */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
+.grid-for-achi{
+    background: 
+      linear-gradient(to right, rgba(147, 145, 145, 0.1) 1.5px, transparent 1px),
+      linear-gradient(to bottom, rgba(147, 145, 145, 0.1) 1.5px, transparent 1px);
+    background-size: 50px 50px; /* Adjust to control grid spacing */
+}
+
+.grid-for-achi {
+    background-color: rgb(40, 38, 38); /* Ensures cards have a solid background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for contrast */
+}
 
 
 
