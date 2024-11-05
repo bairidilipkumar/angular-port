@@ -258,17 +258,16 @@
   <div class="card mt-5 shadow-effect" style="max-width: 40rem; max-height: 65rem;">
     <div class="card-body">
       <div class="row justify-content-center">
-        <p class="card-title">Orchestrating weather API</p>
+        <p class="card-title">End-to-End Data Workflow: Integrating API Data into Snowflake for Business Insights</p>
         <hr>
         <br>
-        <img src="../assets/images/Normal-weather-api-airflow.svg" class="img-fluid mb-3" style="height: 300px; width: 600px;"
-             data-bs-toggle="modal" data-bs-target="#imageModal-weather-api" onclick="showImage(this)">
+        <img src="../assets/images/dbt-pro.svg" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+             data-bs-toggle="modal" data-bs-target="#imageModal-dbt" onclick="showImage(this)">
         <b class="card-text">Explanation</b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
-        <p>Airflow is used to orchestrat the tasks by creating DAG's so i did this project to know more about airflow workflow.
+        <p>In this project, I developed a comprehensive data pipeline that automates the extraction, transformation, and visualization of data for business insights. 
+          The pipeline utilizes Apache Airflow to orchestrate data flow from an external API to AWS S3, where the data is stored for further processing in snowflake using dbt.
                     
-          <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
-
-          <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.</p>
+          <br><b>API Integration:</b> Integrated with a RESTful API to fetch relevant data, which is scheduled to run daily using Airflow. This ensures that the data is consistently up-to-date for analysis.
           <br><p>Read More...</p>
       </div>
     </div>
@@ -384,9 +383,28 @@
       </div>
     </div>
   </div>
+  <div class="card mt-5 shadow-effect" style="max-width: 40rem; max-height: 65rem;">
+    <div class="card-body">
+      <div class="row justify-content-center">
+        <p class="card-title">Orchestrating weather API</p>
+        <hr>
+        <br>
+        <img src="../assets/images/Normal-weather-api-airflow.svg" class="img-fluid mb-3" style="height: 300px; width: 600px;"
+             data-bs-toggle="modal" data-bs-target="#imageModal-weather-api" onclick="showImage(this)">
+        <b class="card-text">Explanation</b><p class="hiddentext" style="color: aliceblue;">(Click on the image "↗" For full Explanation and Source Code)</p>
+        <p>Airflow is used to orchestrat the tasks by creating DAG's so i did this project to know more about airflow workflow.
+                    
+          <br><b>API Integration:</b> Configured Airflow to connect with the Open Weather API, enabling automated data extraction based on predefined schedules.
+
+          <br><b>Data Extraction:</b> Created a task to fetch weather data from the API, ensuring relevant parameters were collected for further processing.</p>
+          <br><p>Read More...</p>
+      </div>
+    </div>
+  </div>
   
 </div>
 
+<!-- modal of above -->
 <div class="modal fade" id="imageModal-snowflake1" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" style="max-width: 90vw; max-height: 90vh;">
     <div class="modal-content" style="height: auto; max-height: 100vh;">
@@ -412,6 +430,37 @@
     </div>
   </div>
 </div>
+
+
+<div class="modal fade" id="imageModal-dbt" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 80vw; max-height: 100vh;">
+      <div class="modal-content" style="height: auto; max-height: 100%;">
+          <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel">AWS ETL pipeline Project</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center" style="overflow-y: auto; max-height: calc(100vh - 150px);">
+              <img id="modalImage" src="../assets/images/dbt-pro.svg" class="img-fluid" style="height: auto; width: 60%; object-fit: contain;">
+              <p></p>
+              <p><b>Data Storage:</b>
+                   The extracted data is pushed to AWS S3, serving as a temporary storage solution and enabling efficient access for further processing.
+                <br><b>Data Staging:</b>
+                
+                Utilized Snowflake as a staging area where the raw data from S3 is ingested. This provides a secure and scalable environment to manage the data.
+                <br><b> Data Transformation:</b>
+                
+                Implemented transformations using dbt (data build tool) to cleanse and model the data. This process included filtering for specific criteria, such as selecting records with ages below 50, and preparing the dataset for analysis.
+                <br> <b> Data Warehousing:</b>
+                
+                Transformed data is then loaded into a Snowflake warehouse, where it is structured for efficient querying and reporting.
+                <br><b> Data Visualization:</b>
+                Leveraged Power BI to create interactive dashboards that visualize the processed data, providing actionable insights to end-users and stakeholders..
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+
 
 
 
