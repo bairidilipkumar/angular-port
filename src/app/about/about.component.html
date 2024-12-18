@@ -49,14 +49,48 @@ centering is also desired, additional CSS might be necessary depending on your
               </div>
               <div class="col-xl-5 col-sm-5 col-12 mt-5 mb-5">
                  
-                  <img [src]="'../assets/images/dilip.jpg'" class="img-fluid mt-5" style="height: 300px; border-radius: 1.3rem;" id="pro1-1">
+                  <!-- <img [src]="'../assets/images/dilip.jpg'" class="img-fluid mt-5" style="height: 300px; width: 300px; border-radius: 1.3rem;" id="pro1-1"> -->
+                  <div class="card mt-5 shadow-effect" style="max-width: 30rem; max-height: 80rem;">
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <img src="../assets/images/dilip.jpg" class="img-fluid mb-3" style="height: 25rem; width: 90rem;"
+                             data-bs-toggle="modal" data-bs-target="#imageModal-weather-api" onclick="showImage(this)">
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
                   
               </div>
+
+              
   
           </div>
  </div> 
  <div>
 </div>
+
+
+<div class="modal fade" id="imageModal-weather-api" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Dilip Kumar, Bairi</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="../assets/images/dilip1.jpg" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showImage(element) {
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = element.src;
+  }
+</script>
 
 
 <div class="row justify-content-around mt-3 mb-5">
@@ -180,7 +214,7 @@ centering is also desired, additional CSS might be necessary depending on your
         <div class="col-12 col-md-8">
           <!-- Left side: Text content -->
           <div class="text-content">
-            <p><strong>Student Assistant Data Analyst.</strong> (May 2023 - Dec 2024) </p>
+            <p><strong>Data Analyst.</strong> (May 2023 - Dec 2024) </p>
             
             <p><strong>Data Analytics:</strong></p>
             <p>Tools: Power BI, Python</p>
