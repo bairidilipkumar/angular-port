@@ -326,3 +326,17 @@
 }
 
 
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #de593b;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #eaa5a0;
+}
